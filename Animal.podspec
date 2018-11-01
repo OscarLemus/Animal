@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Animal", "Animal/**/*.swift"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Animal", "Animal/*.swift"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -133,7 +133,8 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-
+s.ios.deployment_target  = "12.0"
 s.frameworks = "UIKit"
+s.swift_version = "4.2"
 
 end
