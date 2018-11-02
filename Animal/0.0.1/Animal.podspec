@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/OscarLemus/Animal.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/OscarLemus/Animal.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-s.ios.deployment_target  = "12.0"
+s.ios.deployment_target  = "11.0"
 s.frameworks = "UIKit"
 s.swift_version = "4.2"
 
